@@ -20,8 +20,16 @@ button {
     justify-content: center;
     align-items: center;
     color: white;
+    cursor: pointer;
 }
 
 .active {
     background-color: aquamarine;
+}
+
+select {
+    color: black;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
 }
