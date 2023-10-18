@@ -23,15 +23,10 @@ const btn = document.querySelector('button');
 
 btn.addEventListener('click', function () {
 
-    if (btn.classList.contains('btn-clicked')) return;
-
+    if (btn.classList.contains('btn-clicked')) location.reload();
+    // if (btn.classList.contains('btn-clicked')) return; per impedire di ricliccare
 
     //numero di quadratini da generare
-
-    let numSquare;
-    easy.classList.add('easyCl');
-    medium.classList.add('mediumCl')
-    hard.classList.add('hardCl')
 
     if (easy.selected) {
         numSquare = 100
