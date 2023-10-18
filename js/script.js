@@ -14,11 +14,14 @@ al click sul quadratino lo sfondo del quadratino stesso deve diventare verde
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', function () {
+
+    if (btn.classList.contains('btn-clicked')) return;
     //numero di quadratini da generare
-    const numSquare = 64;
+    const numSquare = 100;
     // mi prendo la griglia di gioco
     const playground = document.getElementById('playground')
     //ciclo per stampare i quadratini
+
     for (let i = 0; i < numSquare; i++) {
         //genero quadratino
         let square = drawSquare(i, numSquare);
@@ -26,6 +29,7 @@ btn.addEventListener('click', function () {
 
         //appendo il quadratino alla griglia (playground)
         playground.append(square);
+        btn.classList.add('btn-clicked');
     };
 });
 

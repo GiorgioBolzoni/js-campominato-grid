@@ -14,8 +14,8 @@ button {
 
 .square {
     border: 2px solid white;
-    width: calc(100% / 8);
-    height: calc(100% / 8);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
     display: flex;
     justify-content: center;
     align-items: center;
